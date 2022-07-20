@@ -17,7 +17,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   cors: {
-    origin: ['http://localhost:3000'],
+    origin: ['http://localhost:3000', 'https://crmcliente-br57jgvp9-fredy-glz.vercel.app'],
   },
   context: ({ req }) => {
     // console.log(req.headers['authorization']);
